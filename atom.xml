@@ -6,7 +6,7 @@
   <link href="https://github.com/AAAragorn/sunyang.GitHub.io.git/atom.xml" rel="self"/>
   
   <link href="https://github.com/AAAragorn/sunyang.GitHub.io.git/"/>
-  <updated>2021-05-26T06:26:54.495Z</updated>
+  <updated>2021-05-31T04:14:22.038Z</updated>
   <id>https://github.com/AAAragorn/sunyang.GitHub.io.git/</id>
   
   <author>
@@ -17,12 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AARRR模型</title>
+    <link href="https://github.com/AAAragorn/sunyang.GitHub.io.git/2021/05/28/AARRR%E6%A8%A1%E5%9E%8B/"/>
+    <id>https://github.com/AAAragorn/sunyang.GitHub.io.git/2021/05/28/AARRR%E6%A8%A1%E5%9E%8B/</id>
+    <published>2021-05-28T01:55:29.000Z</published>
+    <updated>2021-05-31T04:14:22.038Z</updated>
+    
+    <content type="html"><![CDATA[<p>基于AARRR模型思考与分析</p><h1 id="基本概述"><a href="#基本概述" class="headerlink" title="基本概述"></a>基本概述</h1><pre><code>用户获取 Acquisition ：获取新用户，用户增长的首要条件用户激活 Activation ：将进入产品的用户激活为活跃用户用户留存 Retention ： 留住用户获得收益 Revenue ：让用户为产品产生效益推荐传播 Referral ：从推荐到再次获取新用户</code></pre><h1 id="获取用户"><a href="#获取用户" class="headerlink" title="获取用户"></a>获取用户</h1><pre><code>获取用户可以从以下几个角度进行分析</code></pre><h2 id="我们的用户是谁"><a href="#我们的用户是谁" class="headerlink" title="我们的用户是谁"></a>我们的用户是谁</h2><pre><code>用户画像 User persona ：用角色描述和用户目标描述一个用户画像、同时这个画像可以代表相似的用户群里，针对具体场景进行分析圈定具体范围    具体来阐述User persona 角色描述是指用户的年龄、位置、收入、职业技能、用以将画像更为具象，其中最为重点的是用户动机。当然我们的画像是抽象出来的一个人物形象    用个体的方式去描述但所代表的是个群体的共性特征。同时在研究这一画像的前提是需要明确具体场景，关注这一具体场景下用户的各类行为，动机，场景的变化势必影响用户画像的准确性用户数据画像User profile 针对收集的用户多维度的信息数据进行统计、分析从而进行抽象用户的形象，更侧重于挖掘，具体表现形式为标签体系用户基本属性：用户不可更改的属性    性别    年龄    家乡用户行为属性：基于用户行为形成的标签用户社会角色：基于标签，用户在app中抽象出的角色</code></pre><h2 id="我们通过什么渠道找到他们"><a href="#我们通过什么渠道找到他们" class="headerlink" title="我们通过什么渠道找到他们"></a>我们通过什么渠道找到他们</h2><pre><code>信息传播的渠道有哪些</code></pre><h2 id="我们用什么方式与他们接触"><a href="#我们用什么方式与他们接触" class="headerlink" title="我们用什么方式与他们接触"></a>我们用什么方式与他们接触</h2><pre><code>这一部分的核心是，如何让用户“感兴趣”</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;基于AARRR模型思考与分析&lt;/p&gt;
+&lt;h1 id=&quot;基本概述&quot;&gt;&lt;a href=&quot;#基本概述&quot; class=&quot;headerlink&quot; title=&quot;基本概述&quot;&gt;&lt;/a&gt;基本概述&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;用户获取 Acquisition ：获取新用户，用户增长的首要条</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>myfirstblog</title>
     <link href="https://github.com/AAAragorn/sunyang.GitHub.io.git/2021/05/26/myfirstblog/"/>
     <id>https://github.com/AAAragorn/sunyang.GitHub.io.git/2021/05/26/myfirstblog/</id>
     <published>2021-05-26T06:26:54.000Z</published>
-    <updated>2021-05-26T06:26:54.495Z</updated>
+    <updated>2021-05-28T01:49:01.017Z</updated>
     
+    <content type="html"><![CDATA[<p>思维方案无外乎归纳、演绎，<br>第一篇内容 持续更新 关于构建数据产品知识体系，<br>当成索引去梳理基本概念和方法。</p><h1 id="数据产品经理知识体系"><a href="#数据产品经理知识体系" class="headerlink" title="数据产品经理知识体系"></a>数据产品经理知识体系</h1><pre><code>本文将为自己提供一个知识体系的搭建记录，同时积累一个可查阅的知识手册，方便自己在未来工作、面试等方面可以快速对于某部分知识进行快速所索引和review。本文的编写结果将按照以下的方式完成，提出问题—拆解问题—分析场景—提出方案—效果评估</code></pre><h2 id="用户画像"><a href="#用户画像" class="headerlink" title="用户画像"></a>用户画像</h2><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><pre><code>sqlpython</code></pre><h2 id="大数据底层知识"><a href="#大数据底层知识" class="headerlink" title="大数据底层知识"></a>大数据底层知识</h2><pre><code>hadoophive表ETL技术数据仓库技术大数据架构代码的工夫</code></pre><h2 id="数据分析体系"><a href="#数据分析体系" class="headerlink" title="数据分析体系"></a>数据分析体系</h2><h2 id="数据管理与数据服务"><a href="#数据管理与数据服务" class="headerlink" title="数据管理与数据服务"></a>数据管理与数据服务</h2><h2 id="数据指标体系"><a href="#数据指标体系" class="headerlink" title="数据指标体系"></a>数据指标体系</h2><pre><code>首先需要进行问题拆分，什么是数据指标体系，数据指标如何获取，体系如何搭建数据指标的定义：数据指标是通过对数据进行分析得到一个汇总结果，是将业务精分和量化后的度量值，使得业务目标可描述、可度量、可拆解。数据指标需要对于业务进行进一步抽象，通过埋点进行采集，设计一套计算规则，最终通过可视化呈现。目的是要解释用户行为和业务变化。</code></pre><h3 id="什么是指标"><a href="#什么是指标" class="headerlink" title="什么是指标"></a>什么是指标</h3><pre><code>指标是 ：纬度+汇总方式+量度纬度：看待事物的角度和方向/决定从什么角度衡量指标汇总方式：求和、均值等统计汇总数据的方式量度：数字+计量单位</code></pre><h3 id="什么是数据指标体系"><a href="#什么是数据指标体系" class="headerlink" title="什么是数据指标体系"></a>什么是数据指标体系</h3><pre><code>数据指标体系：    本质是将数据指标系统的组织起来，具体按照业务模型，区分行业，区分场景，对于指标的不同属性进行分类和分层，同时指标体系也不是一尘不变的，会根据业务不同的发展阶段，有不同的划分标准。    对于业务指标体系化的汇总。用来明确指标口径、维度、指标取数逻辑等信息。指标的类型：    基础指标：不能再拆解的指标，通常表达业务实体原子量化的属性的且不能再分的概念集合    复合指标：建立在基础指标之上，通过一定运算规则形成的指标集合    派生指标：一个原子指标+时间周期修饰词+其他修饰词，是对原子指标业务统计范围的圈定数据指标的类型：    用户行为数据：用户行为数据通常通过埋点获取也可以称之为埋点数据，实则为用户行为日志，用于进行用户行为和用户路径分析。用户在线上通过行为（曝光，点击，访问），使用产品功能（加购，提交，收银台，支付）实现线下+线下场景的融合    业务数据：业务数据通常指与业务相关，无需通过埋点采集用户行为的数据。如终端调用库存系统，CRM平台，创建销售订单数据    事物型指标:对于业务活动进行衡量的指标，如新增注册用户数，当日充值会员数    存量型指标:对于实体状态某些状态的统计，如注册用户总数，充值总金额    复合型指标:在存量和事物指标的基础上复合而成的指标，如GMV，APRU</code></pre><h3 id="数据体系建设"><a href="#数据体系建设" class="headerlink" title="数据体系建设"></a>数据体系建设</h3><pre><code>根据不同业务场景搭建指标体系—我需要哪些指标分成两部分：用户行为，业务数据体系用户行为分析模型：生命周期AARRR：；链接————————————————————————用户路径UJM：链接——————————————————————————业务分析：指标体系案例电商体系：-----社区体系：-----数据采集—我需要怎么获取这些指标用户行为数据：方法流程：数据埋点设计：链接——————————————————————</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;思维方案无外乎归纳、演绎，&lt;br&gt;第一篇内容 持续更新 关于构建数据产品知识体系，&lt;br&gt;当成索引去梳理基本概念和方法。&lt;/p&gt;
+&lt;h1 id=&quot;数据产品经理知识体系&quot;&gt;&lt;a href=&quot;#数据产品经理知识体系&quot; class=&quot;headerlink&quot; title=&quot;数据产品</summary>
+      
     
     
     
