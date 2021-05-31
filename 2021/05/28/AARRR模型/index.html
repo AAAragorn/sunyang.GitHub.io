@@ -1,40 +1,108 @@
-<!DOCTYPE html><html class="appearance-auto" lang="en"><head><meta charset="UTF-8"><title>AARRR模型</title><meta name="description" content="P1 P1!"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
-<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="https://pic1.zhimg.com/v2-79688bee0f16b267fe39c62dfb520f1c_r.jpg?source=1940ef5c"><link rel="stylesheet" href="/sunyang.GitHub.io/style/common/bulma.css"><link rel="stylesheet" href="/sunyang.GitHub.io/style/base.css"><link rel="stylesheet" href="/sunyang.GitHub.io/style/common/helper.css"><script src="/sunyang.GitHub.io/js/common.js"></script><link rel="stylesheet" href="/sunyang.GitHub.io/style/post.css"><link rel="stylesheet" href="/sunyang.GitHub.io/style/themes/highlight-theme-light.css"><script src="/sunyang.GitHub.io/js/highlight.pack.js"></script><meta name="description" content="基于AARRR模型思考与分析
+<!DOCTYPE html><html class="appearance-auto" lang="en"><head><meta charset="UTF-8"><title>sunyang's blog</title><meta name="description" content="P1 P1!"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="https://pic1.zhimg.com/v2-79688bee0f16b267fe39c62dfb520f1c_r.jpg?source=1940ef5c"><link rel="stylesheet" href="/sunyang.GitHub.io/style/common/bulma.css"><link rel="stylesheet" href="/sunyang.GitHub.io/style/base.css"><link rel="stylesheet" href="/sunyang.GitHub.io/style/common/helper.css"><script src="/sunyang.GitHub.io/js/common.js"></script><link rel="stylesheet" href="/sunyang.GitHub.io/style/post.css"><link rel="stylesheet" href="/sunyang.GitHub.io/style/themes/highlight-theme-light.css"><script src="/sunyang.GitHub.io/js/highlight.pack.js"></script><meta name="description" content="
+title: AARRR模型date: 2021-05-28 09:55:29tags:
+
+基于AARRR模型思考与分析
 基本概述用户获取 Acquisition ：获取新用户，用户增长的首要条件
 用户激活 Activation ：将进入产品的用户激活为活跃用户
 用户留存 Retention ： 留住用户
 获得收益 Revenue ：让用户为产品产生效益
 推荐传播 Referral ：从推荐到再次获取新用户
 
-获取用户获取用户可以从以下几个角度进行分析
+获取用户 Acquisition可以理解为可以拉新
 
 我们的用户是谁用户画像 User persona ：用角色描述和用户目标描述一个用户画像、同时这个画像可以代表相似的用户群里，针对具体场景进行分析圈定具体范围
-    具体来阐述User persona 角色描述是指用户的年龄、位置、收入、职业技能、用以将画像更为具象，其中最为重点的是用户动机。当然我们的画像是抽象出来的一个人物形象
-    用个.."><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/sunyang.GitHub.io/atom.xml" title="Hexo" type="application/atom+xml">
-</head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/sunyang.GitHub.io/">sunyang's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">AARRR模型</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Click back to the top</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/">Home</a></h3><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/about">About</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/">Home</a></h3><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/about">About</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E8%BF%B0"><span class="toc-text">基本概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7"><span class="toc-text">获取用户</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E7%9A%84%E7%94%A8%E6%88%B7%E6%98%AF%E8%B0%81"><span class="toc-text">我们的用户是谁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E9%80%9A%E8%BF%87%E4%BB%80%E4%B9%88%E6%B8%A0%E9%81%93%E6%89%BE%E5%88%B0%E4%BB%96%E4%BB%AC"><span class="toc-text">我们通过什么渠道找到他们</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E7%94%A8%E4%BB%80%E4%B9%88%E6%96%B9%E5%BC%8F%E4%B8%8E%E4%BB%96%E4%BB%AC%E6%8E%A5%E8%A7%A6"><span class="toc-text">我们用什么方式与他们接触</span></a></li></ol></li></ol></div><div class="column is-9"><header class="my-4"></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">AARRR模型</h1><time class="has-text-grey" datetime="2021-05-28T01:55:29.000Z">2021-05-28</time><article class="mt-2 post-content"><p>基于AARRR模型思考与分析</p>
+    具体来阐述User persona 角色描述是指用户的年龄、位置、收入、职业技.."><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/sunyang.GitHub.io/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/sunyang.GitHub.io/">sunyang's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center"></p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Click back to the top</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/">Home</a></h3><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/about">About</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/">Home</a></h3><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/about">About</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E8%BF%B0"><span class="toc-text">基本概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7-Acquisition"><span class="toc-text">获取用户 Acquisition</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E7%9A%84%E7%94%A8%E6%88%B7%E6%98%AF%E8%B0%81"><span class="toc-text">我们的用户是谁</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#User-persona"><span class="toc-text">User persona</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E9%80%9A%E8%BF%87%E4%BB%80%E4%B9%88%E6%B8%A0%E9%81%93%E6%89%BE%E5%88%B0%E4%BB%96%E4%BB%AC"><span class="toc-text">我们通过什么渠道找到他们</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E7%94%A8%E4%BB%80%E4%B9%88%E6%96%B9%E5%BC%8F%E4%B8%8E%E4%BB%96%E4%BB%AC%E6%8E%A5%E8%A7%A6"><span class="toc-text">我们用什么方式与他们接触</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E%E5%93%AA%E4%BA%9B%E8%A7%92%E5%BA%A6%E4%BC%98%E5%8C%96%E8%8E%B7%E5%AE%A2"><span class="toc-text">从哪些角度优化获客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A7%E5%93%81%E8%A7%92%E5%BA%A6%EF%BC%9A"><span class="toc-text">产品角度：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%AF%84%E4%BC%B0%E6%8B%89%E6%96%B0%E6%95%88%E6%9E%9C"><span class="toc-text">如何评估拉新效果</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E6%BF%80%E6%B4%BB-Activation"><span class="toc-text">用户激活 Activation</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%94%A8%E6%88%B7%E6%BF%80%E6%B4%BB"><span class="toc-text">什么是用户激活</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%AF%84%E4%BC%B0%E7%95%99%E5%AD%98"><span class="toc-text">如何评估留存</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E7%95%99%E5%AD%98"><span class="toc-text">如何提升留存</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8E%B7%E5%BE%97%E6%94%B6%E7%9B%8A-Revenue"><span class="toc-text">获得收益 Revenue</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%AF%84%E4%BC%B0%E6%94%B6%E7%9B%8A"><span class="toc-text">如何评估收益</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8E%A8%E8%8D%90%E4%BC%A0%E6%92%AD-Referral"><span class="toc-text">推荐传播 Referral</span></a></li></ol></div><div class="column is-9"><header class="my-4"></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle"></h1><time class="has-text-grey" datetime="2021-05-28T01:55:29.623Z">2021-05-28</time><article class="mt-2 post-content"><hr>
+<p>title: AARRR模型<br>date: 2021-05-28 09:55:29<br>tags:</p>
+<hr>
+<p>基于AARRR模型思考与分析</p>
 <h1 id="基本概述"><a href="#基本概述" class="headerlink" title="基本概述"></a>基本概述</h1><pre><code>用户获取 Acquisition ：获取新用户，用户增长的首要条件
 用户激活 Activation ：将进入产品的用户激活为活跃用户
 用户留存 Retention ： 留住用户
 获得收益 Revenue ：让用户为产品产生效益
 推荐传播 Referral ：从推荐到再次获取新用户
 </code></pre>
-<h1 id="获取用户"><a href="#获取用户" class="headerlink" title="获取用户"></a>获取用户</h1><pre><code>获取用户可以从以下几个角度进行分析
+<h1 id="获取用户-Acquisition"><a href="#获取用户-Acquisition" class="headerlink" title="获取用户 Acquisition"></a>获取用户 Acquisition</h1><pre><code>可以理解为可以拉新
 </code></pre>
 <h2 id="我们的用户是谁"><a href="#我们的用户是谁" class="headerlink" title="我们的用户是谁"></a>我们的用户是谁</h2><pre><code>用户画像 User persona ：用角色描述和用户目标描述一个用户画像、同时这个画像可以代表相似的用户群里，针对具体场景进行分析圈定具体范围
     具体来阐述User persona 角色描述是指用户的年龄、位置、收入、职业技能、用以将画像更为具象，其中最为重点的是用户动机。当然我们的画像是抽象出来的一个人物形象
     用个体的方式去描述但所代表的是个群体的共性特征。同时在研究这一画像的前提是需要明确具体场景，关注这一具体场景下用户的各类行为，动机，场景的变化势必影响用户画像的准确性
 用户数据画像User profile 针对收集的用户多维度的信息数据进行统计、分析从而进行抽象用户的形象，更侧重于挖掘，具体表现形式为标签体系
-用户基本属性：用户不可更改的属性
-    性别
-    年龄
-    家乡
-
-用户行为属性：基于用户行为形成的标签
-
-用户社会角色：基于标签，用户在app中抽象出的角色
+persona vs profile:
+    1.前者为抽象的用户模型后者为真实采集的用户数据 
+    2.用户特征/目标/能力的概括/，用户行为数据统计 
+    3.前者为初期描述目标客户，后者根据用户行为，观察，预测用户行为
+    4.定性研究、定量研究与数据分析
+</code></pre>
+<h4 id="User-persona"><a href="#User-persona" class="headerlink" title="User persona"></a>User persona</h4><pre><code>构建方法：
+    step1:确定目标与画像维度：
+        基于产品目标+业务目标，制定画像信息的维度，当然业务目标都是快速了解目标用户，了解用户是谁，认知，使用场景反馈及遇到的问题。同时对于目标用户进行筛选，B端可根据职业技能。
+        画像维度：http://image.woshipm.com/wp-files/2020/12/Kn7qRr8cs5ky0b63lBcM.png
+            用户基础信息：个性形象、姓名、年龄区间、收入水平、城市区域、教育背景、职业类型、婚姻状况、工作属性
+            用户描述/简介
+            人物性格
+            兴趣爱好
+            技能&amp;经验
+            人物关系
+            目标：使用产品的最终目标、体验目标、人生目标
+            用户痛点：痛点1、痛点2、痛点3
+            工作内容：工作内容1、工作内容2、工作内容3
+            遇到的挫折：挫折1...
+            行为习惯
+            态度与观点：对本产品、竞对产品
+            需求&amp;期望
+    step2:确定调研方法
+        方法有哪些：
+            访谈法/二手资料研究
+            问卷调研/数据分析
+            或两者结合
+        方法如何选择：
+            差异性
+            时间周期：
+                在初创期：产品未定型，目标用户也在探索，可使用访谈法对于专家/竞对用户着重挖掘他们的使用场景、核心痛点，进行MVP版本验证。
+                成长期：产品进入快速成长期，对于用户进行分层，进行定量分析。
+                成熟期：满足现有用户需求的同时寻找突破点，需要挖掘细分市场。
+                衰退期使用不同的方法：定量查出问题，定性了解原因，调整产品。
+    step3:制定计划与数据获取
+        对于所选调查方法进行设计，进行落地和实施
+    step4:分析资料，对于结果进行聚类分析
+        找到关键的维度
+        对于高频的维度进行聚类分析
+        形成角色
+    step5:综合特征，产出画像
 </code></pre>
 <h2 id="我们通过什么渠道找到他们"><a href="#我们通过什么渠道找到他们" class="headerlink" title="我们通过什么渠道找到他们"></a>我们通过什么渠道找到他们</h2><pre><code>信息传播的渠道有哪些
 </code></pre>
 <h2 id="我们用什么方式与他们接触"><a href="#我们用什么方式与他们接触" class="headerlink" title="我们用什么方式与他们接触"></a>我们用什么方式与他们接触</h2><pre><code>这一部分的核心是，如何让用户“感兴趣”
 </code></pre>
+<h2 id="从哪些角度优化获客"><a href="#从哪些角度优化获客" class="headerlink" title="从哪些角度优化获客"></a>从哪些角度优化获客</h2><h3 id="产品角度："><a href="#产品角度：" class="headerlink" title="产品角度："></a>产品角度：</h3><pre><code>简化注册登录流程
+滞后权限授权
+用户首次进行产品/介绍和指引
+</code></pre>
+<h2 id="如何评估拉新效果"><a href="#如何评估拉新效果" class="headerlink" title="如何评估拉新效果"></a>如何评估拉新效果</h2><pre><code>落地页浏览量、落地页访问人数、各渠道新增用户、获客成本
+渠道量级指标：曝光量、点击、下载、安装、激活（注册激活，主动激活、推送激活、交易激活）、累计新增。
+渠道质量指标：CTR，激活率，安装率，CPA等每用户成本、用户LTV、1次/1日用户量，用户使用时长、留存率、付费率、ARPU
+</code></pre>
+<h1 id="用户激活-Activation"><a href="#用户激活-Activation" class="headerlink" title="用户激活 Activation"></a>用户激活 Activation</h1><h2 id="什么是用户激活"><a href="#什么是用户激活" class="headerlink" title="什么是用户激活"></a>什么是用户激活</h2><pre><code>需要用客户对一核心功能的使用作为衡量指标
+在实际应用的过程中需要找到匹配自己产品的用户激活标准
+DAU = 当日新增+累计历史日留存
+</code></pre>
+<p>##如何对于用户进行激活<br>    先吸引：用户疏忽<br>    再激活<br>##如何评估激活效果<br>    分析活跃可以从两个角度出发：1.活跃用户构成 2.产品粘度<br>        1.活跃用户构成：新老用户占比、新老用户活跃率、忠诚用户数、回流用户数、1次/1日登录用户占比等指标，根据不同产品运营时期，不同的参考数值。<br>        2.产品粘度：<br>            产品黏度很关键的指标，它说明了用户对产品的喜欢接纳程度，我们通常用MAU/DAU 来定义产品的黏度指标，比值代表用户回访的天数（几天会用一次产品），当MAU/DAU=1的话说明这款产品用户每天都用；<br>            DAU/MAU * 30 代表用户一个月会用几次产品。<br>            7日回访率、日均使用时长、日均登录次数等都是产品粘度的重要指标，分不同类型产品，依次分析<br>#用户留存 Retention<br>    留存：维护老用户的成本要远远低于一个新用户的成本，分析用户在哪里流失，为什么流失，是产品良性运营关键之处<br>    留存率比较需要根据产品类型进行划分，想某些工具类的产品并不会每日启动，关注于更加长期的留存会更有意义</p>
+<h2 id="如何评估留存"><a href="#如何评估留存" class="headerlink" title="如何评估留存"></a>如何评估留存</h2><pre><code>产品留存：日周留存率、新老用户留存、活跃用户留存、产品核心功能留存、用户行为留存
+分析方式：流失漏斗、流失率、流失概率、流失占比
+</code></pre>
+<h2 id="如何提升留存"><a href="#如何提升留存" class="headerlink" title="如何提升留存"></a>如何提升留存</h2><pre><code>有效触发，唤醒用户：手机push、短信微信，针对召回率最高的用户进行
+搭建激励体系，留存用户：成长值用户体系、签到体系、积分任务体系
+丰富内容：增加产品内的相关活动
+数据分析：找到流失关键点
+</code></pre>
+<h1 id="获得收益-Revenue"><a href="#获得收益-Revenue" class="headerlink" title="获得收益 Revenue"></a>获得收益 Revenue</h1><h2 id="如何评估收益"><a href="#如何评估收益" class="headerlink" title="如何评估收益"></a>如何评估收益</h2><pre><code>付费用户构成：高额、中额、低额用户分布
+基本指标：GMV、复购率、销量、ARPU、ARPPU、付费率
+会员：会员充值人数、会员充值金额、续费人数
+广告：广告请求人数、广告位点击次数、广告位曝光次数
+</code></pre>
+<h1 id="推荐传播-Referral"><a href="#推荐传播-Referral" class="headerlink" title="推荐传播 Referral"></a>推荐传播 Referral</h1><pre><code>引荐即产品的自传播环节，展现为用户的口碑
+</code></pre>
+<p>##如何评估传播<br>    百度指数<br>    口碑指数<br>    搜索引擎收录数<br>    反向链接数<br>    病毒传播K因子<br>    传播周期（传播-转化）<br>    净推荐值 NPS = （推荐者数/总样本数）* 100% -（贬损者数/总人数）* 100%</p>
 </article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><em></em><a class="button is-default" href="/sunyang.GitHub.io/2021/05/26/myfirstblog/" title="myfirstblog"><span class="has-text-weight-semibold">Next: myfirstblog</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="Haojen/Claudia-theme-blog" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com//"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/haojen"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com//"><i class="iconfont icon-ins"></i></a><!-- RSS--><!-- 知乎--><!-- 领英--><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com//"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> sunyang 2021</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/sunyang.GitHub.io/js/post.js"></script></body></html>
