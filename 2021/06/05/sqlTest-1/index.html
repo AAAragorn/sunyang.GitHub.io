@@ -169,4 +169,23 @@ SELECT * FROM StudentWHERE SId IN    (SELECT v1.SId FROM (SELECT.."><meta name="
 <li>查询” 01 “课程比” 02 “课程成绩高的学生的信息及课程分数</li>
 </ol>
 <p>SELECT * FROM Student<br>WHERE SId IN<br>    (SELECT v1.SId FROM (SELECT * FROM SC WHERE SC.CId = ‘01’) As v1<br>INNER JOIN (SELECT * FROM SC WHERE SC.CId = ‘02’) AS v2 ON v1.SId = v2.SId<br>WHERE v1.score &gt; v2.score)</p>
+<ol start="2">
+<li>查询同时上过” 01 “课程和” 02 “课程的的学生的成绩情况</li>
+</ol>
+<p>SELECT v1.SId,v1.score As 01_score,v2.score As 02_score<br>FROM (Select * FROM SC WHERE SC.CId = ‘01’) AS v1<br>INNER JOIN (SELECT * FROM SC WHERE SC.CId = ‘02’) AS v2<br>ON v1.SId = v2.SId</p>
+<ol start="3">
+<li>查询平均成绩大于60分的学生的学号和平均成绩</li>
+</ol>
+<p>SELECT s.Sid,AVG(s.score)<br>FROM SC AS s<br>GROUP BY s.Sid<br>HAVING AVG(s.score) &gt; 60</p>
+<p>4.查询平均成绩小于60分的学生的学号和平均成绩 不包含无效成绩</p>
+<p>AVG() GROUP BY HAVING</p>
+<p>SELECT s.Sid,AVG(IFNULL(s.score,0))<br>FROM SC AS s<br>GROUP BY s.Sid<br>HAVING AVG(s.score) is NULL or AVG(s.score) &lt; 60</p>
+<p>5.查询张姓老师的数量</p>
+<p>SELECT</p>
+<p>6.每门课程的学生人数</p>
+<p>SELECT c.CId AS “课程id”,count(*) AS “课程人数”<br>FROM Course AS c LEFT JOIN SC<br>on c.CId = SC.CId<br>GROUP BY c.CId</p>
+<p>7.查询课程编号为 01 且课程成绩在 80 分及以上的学生的学号和姓名</p>
+<p>SELECT<br>FROM </p>
+<p>3.统计每门课程的学生选修人数（超过 5 人的课程才统计</p>
+<p>检索至少选修两门课程的学生学号</p>
 </article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><a class="button is-default" href="/sunyang.GitHub.io/2021/06/05/%E5%BD%B7%E5%BE%A8%E5%B0%91%E5%B9%B4%E6%97%B6/" title="彷徨少年时"><i class="iconfont icon-prev mr-2 has-text-grey"></i><span class="has-text-weight-semibold">Previous: 彷徨少年时</span></a><a class="button is-default" href="/sunyang.GitHub.io/2021/06/02/mock%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E4%BD%93%E7%B3%BB%E6%90%AD%E5%BB%BA/" title="mock数据指标体系搭建"><span class="has-text-weight-semibold">Next: mock数据指标体系搭建</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="Haojen/Claudia-theme-blog" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com//"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/haojen"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com//"><i class="iconfont icon-ins"></i></a><!-- RSS--><!-- 知乎--><!-- 领英--><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com//"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> sunyang 2021</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/sunyang.GitHub.io/js/post.js"></script></body></html>
