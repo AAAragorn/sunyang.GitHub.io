@@ -118,5 +118,31 @@ OSM的实践：OSM作为数据指标体系的指导思想，理解业务，制�
     数据采集—我需要怎么获取这些指标
         数据埋点设计：链接——————————————————————
         预值属性整理：https://tongji.baidu.com/analytics-manual/data_management/preset.html
+
+    在没有任何埋点的情况下，合适的方式是根据产品的链路进行埋点的梳理。
+
+    以倒序链路形式记录用户的每一条路径、页面，与点击。同级页面操作或多来源页面一漏斗形式呈现。
+
+    在梳理链路时一定做到尽善尽美，每个页面的浏览和每一次点击都要记录在案。至于埋不埋是下一步考虑的事情。
+
+
+    1）功能数据
+
+    指的是基于版本动作而产生的数据需求。列举版本所做的新功能和修改，从动作出发去思考带来的直接数据效果，或者用什么数据去验证动作效果。
+
+    例如新版本上了一个在线用户列表，其他用户可查看用户列表后前往个人主页发起聊天。在列表中增加了新人权重，以提高新人收信率。
+
+    此时整理出的数据需求包含：
+
+    通过该列表进行发送私信的转化率
+    新用户首日被浏览率
+    新用户首日收招呼率
+    从数据需求出发梳理短链路和埋点，在埋点文档中查漏补缺。可能是补充事件，也可能补充埋点就足够了。
+
+    （2）核心数据
+
+    每个版本我们都会做不同的动作，或大或小。动作有对应的数据去验证其有效性。但是产品在一个阶段内，会有一些核心数据需要去持续观测，要和功能数据去进行一个权衡对比。如果功能数据上升了，但是核心数据下降了，也是不可取的片面验证。
+
+    核心数据便是产品在一个阶段内需要去持续观测的最重要的一些数据。例如对于社交产品来说，我们一般持续观测其留存率、连接率和客单价等关键数据。
 </code></pre>
 </article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><a class="button is-default" href="/sunyang.GitHub.io/2021/05/28/AARRR%E6%A8%A1%E5%9E%8B/" title=""><i class="iconfont icon-prev mr-2 has-text-grey"></i><span class="has-text-weight-semibold">Previous: </span></a><a class="button is-default" href="/sunyang.GitHub.io/2021/05/26/hello-world/" title="Hello World"><span class="has-text-weight-semibold">Next: Hello World</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="Haojen/Claudia-theme-blog" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com//"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/haojen"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com//"><i class="iconfont icon-ins"></i></a><!-- RSS--><!-- 知乎--><!-- 领英--><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com//"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> sunyang 2021</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/sunyang.GitHub.io/js/post.js"></script></body></html>
