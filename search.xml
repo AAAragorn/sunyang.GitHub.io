@@ -4,7 +4,26 @@
   
     
     <entry>
-      <title>获取基础数据需求分析</title>
+      <title>笛卡尔积</title>
+      <link href="/sunyang.GitHub.io/2021/07/08/%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF/"/>
+      <url>/sunyang.GitHub.io/2021/07/08/%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 开坑等填 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>获取基础数据需求思考</title>
       <link href="/sunyang.GitHub.io/2021/07/05/%E8%8E%B7%E5%8F%96%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/"/>
       <url>/sunyang.GitHub.io/2021/07/05/%E8%8E%B7%E5%8F%96%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/</url>
       
@@ -62,18 +81,30 @@
       
       
       
+        <tags>
+            
+            <tag> 书评 </tag>
+            
+        </tags>
+      
     </entry>
     
     
     
     <entry>
-      <title>sqlTest_1</title>
+      <title>sql_练习</title>
       <link href="/sunyang.GitHub.io/2021/06/05/sqlTest-1/"/>
       <url>/sunyang.GitHub.io/2021/06/05/sqlTest-1/</url>
       
-        <content type="html"><![CDATA[<p>所使用的表 </p><p>Course:</p><table><thead><tr><th>Cid</th><th>Cname</th><th>Tid</th></tr></thead><tbody><tr><td>01</td><td>语文</td><td>02</td></tr><tr><td>02</td><td>数学</td><td>01</td></tr><tr><td>03</td><td>英语</td><td>03</td></tr></tbody></table><p>Sc:</p><table><thead><tr><th>Sid</th><th>Cid</th><th>Score</th></tr></thead><tbody><tr><td>01</td><td>01</td><td>80</td></tr><tr><td>01</td><td>02</td><td>90</td></tr><tr><td>01</td><td>03</td><td>99</td></tr><tr><td>02</td><td>01</td><td>70</td></tr><tr><td>02</td><td>02</td><td>60</td></tr><tr><td>02</td><td>03</td><td>80</td></tr></tbody></table><p>Student:</p><p>|Sid|Sname|Sage|Sex|<br>|—|—–|—|<br>|01|赵雷|1990-01-01 00:00:00|男|</p><p>Teacher:</p><table><thead><tr><th>Tid</th><th>Tname</th></tr></thead><tbody><tr><td>01</td><td>张三</td></tr></tbody></table><ol><li>查询” 01 “课程比” 02 “课程成绩高的学生的信息及课程分数</li></ol><p>SELECT * FROM Student<br>WHERE SId IN<br>    (SELECT v1.SId FROM (SELECT * FROM SC WHERE SC.CId = ‘01’) As v1<br>INNER JOIN (SELECT * FROM SC WHERE SC.CId = ‘02’) AS v2 ON v1.SId = v2.SId<br>WHERE v1.score &gt; v2.score)</p><ol start="2"><li>查询同时上过” 01 “课程和” 02 “课程的的学生的成绩情况</li></ol><p>SELECT v1.SId,v1.score As 01_score,v2.score As 02_score<br>FROM (Select * FROM SC WHERE SC.CId = ‘01’) AS v1<br>INNER JOIN (SELECT * FROM SC WHERE SC.CId = ‘02’) AS v2<br>ON v1.SId = v2.SId</p><ol start="3"><li>查询平均成绩大于60分的学生的学号和平均成绩</li></ol><p>SELECT s.Sid,AVG(s.score)<br>FROM SC AS s<br>GROUP BY s.Sid<br>HAVING AVG(s.score) &gt; 60</p><p>4.查询平均成绩小于60分的学生的学号和平均成绩 不包含无效成绩</p><p>AVG() GROUP BY HAVING</p><p>SELECT s.Sid,AVG(IFNULL(s.score,0))<br>FROM SC AS s<br>GROUP BY s.Sid<br>HAVING AVG(s.score) is NULL or AVG(s.score) &lt; 60</p><p>5.查询张姓老师的数量</p><p>SELECT</p><p>6.每门课程的学生人数</p><p>SELECT c.CId AS “课程id”,count(*) AS “课程人数”<br>FROM Course AS c LEFT JOIN SC<br>on c.CId = SC.CId<br>GROUP BY c.CId</p><p>7.查询课程编号为 01 且课程成绩在 80 分及以上的学生的学号和姓名</p><p>SELECT<br>FROM </p><p>3.统计每门课程的学生选修人数（超过 5 人的课程才统计</p><p>检索至少选修两门课程的学生学号</p>]]></content>
+        <content type="html"><![CDATA[<p>所使用的表 </p><p>Course:</p><table><thead><tr><th>Cid</th><th>Cname</th><th>Tid</th></tr></thead><tbody><tr><td>01</td><td>语文</td><td>02</td></tr><tr><td>02</td><td>数学</td><td>01</td></tr><tr><td>03</td><td>英语</td><td>03</td></tr></tbody></table><p>Sc:</p><table><thead><tr><th>Sid</th><th>Cid</th><th>Score</th></tr></thead><tbody><tr><td>01</td><td>01</td><td>80</td></tr><tr><td>01</td><td>02</td><td>90</td></tr><tr><td>01</td><td>03</td><td>99</td></tr><tr><td>02</td><td>01</td><td>70</td></tr><tr><td>02</td><td>02</td><td>60</td></tr><tr><td>02</td><td>03</td><td>80</td></tr></tbody></table><p>Student:</p><p>|Sid|Sname|Sage|Sex|<br>|—|—–|—|<br>|01|赵雷|1990-01-01 00:00:00|男|</p><p>Teacher:</p><table><thead><tr><th>Tid</th><th>Tname</th></tr></thead><tbody><tr><td>01</td><td>张三</td></tr></tbody></table><ol><li><p>查询” 01 “课程比” 02 “课程成绩高的学生的信息及课程分数</p><p> SELECT * FROM Student<br> WHERE SId IN </p><pre><code> (SELECT v1.SId FROM (SELECT * FROM SC WHERE SC.CId = &#39;01&#39;) As v1</code></pre><p> INNER JOIN (SELECT * FROM SC WHERE SC.CId = ‘02’) AS v2 ON v1.SId = v2.SId<br> WHERE v1.score &gt; v2.score)</p></li><li><p>查询同时上过” 01 “课程和” 02 “课程的的学生的成绩情况</p><p> SELECT v1.SId,v1.score As 01_score,v2.score As 02_score<br> FROM (Select * FROM SC WHERE SC.CId = ‘01’) AS v1<br> INNER JOIN (SELECT * FROM SC WHERE SC.CId = ‘02’) AS v2<br> ON v1.SId = v2.SId</p></li><li><p>查询平均成绩大于60分的学生的学号和平均成绩</p><p> SELECT s.Sid,AVG(s.score)<br> FROM SC AS s<br> GROUP BY s.Sid<br> HAVING AVG(s.score) &gt; 60</p></li></ol><p>4.查询平均成绩小于60分的学生的学号和平均成绩 不包含无效成绩</p><pre><code>AVG() GROUP BY HAVINGSELECT s.Sid,AVG(IFNULL(s.score,0))FROM SC AS sGROUP BY s.SidHAVING AVG(s.score) is NULL or AVG(s.score) &lt; 60</code></pre><p>5.查询张姓老师的数量</p><pre><code>简单了</code></pre><p>6.每门课程的学生人数</p><pre><code>SELECT c.CId AS &quot;课程id&quot;,count(*) AS &quot;课程人数&quot;FROM Course AS c LEFT JOIN SCon c.CId = SC.CIdGROUP BY c.CId</code></pre><p>7.查询课程编号为 01 且课程成绩在 80 分及以上的学生的学号和姓名</p><pre><code>简单了</code></pre><p>8.选修了全部课程的学生信息</p><pre><code>SELECT *FROM StudentWHERE Student.SId IN(SELECT Student.SIdFROM Student LEFT JOIN SCON Student.SId = SC.SIdGROUP BY Student.SIdHAVING COUNT(*)  = (SELECT COUNT(*) FROM Course))</code></pre><p>9.查询存在不及格的课程</p><pre><code>SELECT *FROM CourseWHERE Course.CId IN (    SELECT DISTINCT CId    FROM SC    WHERE SC.score &lt; 60)</code></pre><p>10.查询任何一门课程成绩在 70 分以上的学生姓名、课程名称和分数</p><pre><code>SELECT Student.Sname,Course.Cname,SC.scoreFROM Student,SC,CourseWHERE Student.SID = SC.SId AND SC.CId = Course.CId AND SC.score &gt; 70</code></pre><p>11.查询课程名称为「数学」，且分数低于 60 的学生姓名和分数</p><pre><code>SELECT Student.Sname,SC.scoreFROM Student,SC,CourseWHERE Student.SId = SC.SId AND Course.CId = SC.CId AND Course.Cname = &quot;数学&quot; AND SC.score &lt; 60</code></pre><p>12.查询平均成绩大于等于 85 的所有学生的学号、姓名和平均成绩</p><pre><code>SELECT a.SId,a.Sname,AVG(b.score)FROM Student a,SC bWHERE a.SId = b.SIdGROUP BY a.SIdHAVING AVG(b.score) &gt; 85</code></pre><p>13.查询男生、女生人数</p><pre><code>SELECT Student.Ssex,COUNT(Student.Ssex)FROM StudentGROUP BY Student.Ssex</code></pre><p>14.检索” 01 “课程分数小于 60，按分数降序排列的学生信息</p><pre><code>SELECT Student.*FROM Student,SCWHERE Student.SId = SC.SId AND SC.score &lt; 60 AND SC.CId = &#39;01&#39;ORDER BY SC.score DESC</code></pre><p>15.按平均成绩从高到低显示所有学生的所有课程的成绩以及平均成绩</p><pre><code>SELECT SC.SId,SUM(CASE WHEN SC.CId = &#39;01&#39; THEN SC.score END) AS &quot;01&quot;,FROM SCGROUP BY SC.SId</code></pre><p>16.以如下形式显示：课程 ID，课程 name，最高分，最低分，平均分，及格率，中等率，优良率，优秀率，及格为&gt;=60，中等为：70-80，优良为：80-90，优秀为：&gt;=90，要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列</p><pre><code>SELECT SC.CId,            MAX(SC.score) AS &quot;最高分&quot;,            MIN(SC.score) AS &quot;最高分&quot;,            AVG(SC.score) AS &quot;平均分&quot;,            CONCAT(CAST(COUNT(Case WHEN SC.score &gt;=60 THEN SC.score END)/COUNT(SC.score)*100 AS DECIMAL),&quot;%&quot;) AS &quot;及格率&quot;FROM SC LEFT JOIN CourseON SC.CId = Course.CIdGROUP BY SC.CId</code></pre><p>17.查询没学过”张三”老师讲授的任一门课程的学生姓名</p><pre><code>SELECT SC.SIdFROM SC,StudentWHERE SC.SId = Student.SIdGROUP BY SC.SIdHAVING SC.SId NOT IN (        SELECT SC.SId        FROM SC        WHERE SC.CId IN (            SELECT Course.CId            FROM Course             WHERE Course.TId  = (SELECT Teacher.TId FROM Teacher WHERE Teacher.Tname = &quot;张三&quot;)        ))</code></pre><p>18.成绩不重复，查询选修「张三」老师所授课程的学生中，成绩最高的学生信息及其成绩</p><pre><code>SELECT Student.Sname,SC.scoreFROM SC,Student,Course,TeacherWHERE SC.SId = Student.SId     AND SC.CId = Course.TId    AND Course.TId = Teacher.TId    AND Teacher.Tname = &quot;张三&quot;ORDER BY SC.score DESCLIMIT 1思考 LIMIT 和ORDER BY 错误的思路 用了MAX</code></pre><p>19.成绩有重复的情况下，查询选修「张三」老师所授课程的学生中，成绩最高的学生信息及其成绩</p><p>在成绩有重复的情况下存在相同，需要子查询找出最高的成绩。找学生</p><p>20.查询不同课程成绩相同的学生的学生编号、课程编号、学生成绩</p><pre><code>SELECT any_value(A.CId),any_value(A.SId),any_value(A.score)FROM SC AS A INNER JOIN SC AS BON A.score = B.scoreAND A.CId != B.CIdAND A.SId = B.SIdGROUP BY A.CId,A.SId</code></pre>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 练习记录 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -87,6 +118,12 @@
         <content type="html"><![CDATA[<p>web pro数据指标体系<br>业务分析：xxx作为一款数据可视化工具，旨在为用户快速、简单的将数据资产可视化的能力。<br>使用场景：大屏展示、报表分析。<br>业务目标：实现付费会员数增长<br>产品特点<br>    用户群体 persona:<br>        用户群体较为稳定，大多是设计师、技术人员；<br>        需求较为明确，需要将生产出大屏或报表<br>        访问量稳定，服务于特定公司或者部门，作为工作流程中必不可少的产品，大部分人的工作可能就是围绕这些产品展开；<br>        与产品<br>        与大部分信息型网站不同，产品偏重功能与交互，会有比较复杂和专业的信息结构和任务流程；<br>        大多作为效率工具，非商业化。<br>    用户目标：<br>        需求较为明确，需要将生产出大屏或报表<br>        效率提升<br>        对于美观度需求较高<br>        3d结合的效果<br>指标体系建设内容：指标体系建设包括指标梳理——埋点采集——数据验证-数据可视化<br>数据体系建设目标<br>第一步以产品监控为目标进行指标体系建设<br>质量+安全 监控的核心 要保证产品的可用性<br>登录<br>    注册</p><p>项目管理</p><p>项目编辑<br>    创建组件</p><p>购买</p><p>页面跳转<br>    时长<br>    目标页面<br>    来源页面</p><p>用户属性</p><p>和安全</p><p>针对产品主要流程的关键节点，进行埋点监控，以期及时发现</p><p>获取</p><p>激活</p><p>留存</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 开坑待填 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -114,6 +151,12 @@
       
       
       
+        <tags>
+            
+            <tag> 书评 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -132,13 +175,19 @@
     
     
     <entry>
-      <title>数据产品经理知识体系</title>
+      <title>知识体系</title>
       <link href="/sunyang.GitHub.io/2021/05/26/myfirstblog/"/>
       <url>/sunyang.GitHub.io/2021/05/26/myfirstblog/</url>
       
         <content type="html"><![CDATA[<p>思维方案无外乎归纳、演绎，<br>第一篇内容 持续更新 关于构建数据产品知识体系，<br>当成索引去梳理基本概念和方法。</p><h1 id="数据产品经理知识体系"><a href="#数据产品经理知识体系" class="headerlink" title="数据产品经理知识体系"></a>数据产品经理知识体系</h1><pre><code>本文将为自己提供一个知识体系的搭建记录，同时积累一个可查阅的知识手册，方便自己在未来工作、面试等方面可以快速对于某部分知识进行快速所索引和revie本文的编写结果将按照以下的方式完成，提出问题—拆解问题—分析场景—提出方案—效果评估</code></pre><h2 id="用户画像"><a href="#用户画像" class="headerlink" title="用户画像"></a>用户画像</h2><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><pre><code>sql：链接：python：repos </code></pre><h2 id="大数据底层知识"><a href="#大数据底层知识" class="headerlink" title="大数据底层知识"></a>大数据底层知识</h2><pre><code>hadoophive表ETL技术数据仓库技术大数据架构</code></pre><h2 id="数据管理与数据服务"><a href="#数据管理与数据服务" class="headerlink" title="数据管理与数据服务"></a>数据管理与数据服务</h2><h2 id="数据指标体系"><a href="#数据指标体系" class="headerlink" title="数据指标体系"></a>数据指标体系</h2><pre><code>首先需要进行问题拆分，什么是数据指标体系，数据指标如何获取，体系如何搭建数据指标的定义：数据指标是通过对数据进行分析得到一个汇总结果，是将业务精分和量化后的度量值，使得业务目标可描述、可度量、可拆解。数据指标需要对于业务进行进一步抽象，通过埋点进行采集，设计一套计算规则，最终通过可视化呈现。目的是要解释用户行为和业务变化。</code></pre><h3 id="什么是指标"><a href="#什么是指标" class="headerlink" title="什么是指标"></a>什么是指标</h3><pre><code>指标是 ：纬度+汇总方式+量度纬度：看待事物的角度和方向/决定从什么角度衡量指标汇总方式：求和、均值等统计汇总数据的方式量度：数字+计量单位</code></pre><h3 id="什么是数据指标体系"><a href="#什么是数据指标体系" class="headerlink" title="什么是数据指标体系"></a>什么是数据指标体系</h3><pre><code>数据指标体系：    本质是将数据指标系统的组织起来，具体按照业务模型，区分行业，区分场景，对于指标的不同属性进行分类和分层，同时指标体系也不是一尘不变的，会根据业务不同的发展阶段，有不同的划分标准。    对于业务指标体系化的汇总。用来明确指标口径、维度、指标取数逻辑等信息。指标的类型：    基础指标：不能再拆解的指标，通常表达业务实体原子量化的属性的且不能再分的概念集合    复合指标：建立在基础指标之上，通过一定运算规则形成的指标集合    派生指标：一个原子指标+时间周期修饰词+其他修饰词，是对原子指标业务统计范围的圈定数据指标的类型：    用户行为数据：用户行为数据通常通过埋点获取也可以称之为埋点数据，实则为用户行为日志，用于进行用户行为和用户路径分析。用户在线上通过行为（曝光，点击，访问），使用产品功能（加购，提交，收银台，支付）实现线下+线下场景的融合    业务数据：业务数据通常指与业务相关，无需通过埋点采集用户行为的数据。如终端调用库存系统，CRM平台，创建销售订单数据    事物型指标:对于业务活动进行衡量的指标，如新增注册用户数，当日充值会员数    存量型指标:对于实体状态某些状态的统计，如注册用户总数，充值总金额    复合型指标:在存量和事物指标的基础上复合而成的指标，如GMV，APRU</code></pre><h3 id="数据体系建设"><a href="#数据体系建设" class="headerlink" title="数据体系建设"></a>数据体系建设</h3><pre><code>根据不同业务场景搭建指标体系—我需要哪些指标分成两部分：用户行为，业务数据体系基本指导思路 OSM    O：代表业务目标，我们需要明确我们产品的功能存在的目的是什么，能够解决客户什么问题，满足那些需求    S: 我们随采取的策略    M：我们如何评估我们的策略效果 KPI/Target    step1:基于产品使用场景，确定使用目标,并对于场景的基本情况和客观条件做简要说明，可以选取两种视角去思考：用户视角/业务视角        拆解目标的办法：我们可以从核心kpi拆解到业务核心目标，长期与近期相辅相成        例如：让用户找到合适的案例，提升试用-下单转化率提高xx%    step2:我们会采取什么样的策略去实现目标，        如用户目的是找到心仪的产品/业务的目标是通过提高搜索匹配度，最终提高下单转化率，那么我们有策略        1.xxxx        2.xxxxx        例如：提告案例搜索结果与搜索词的匹配度    step3:选取合适的指标度量，区分过程性和结果性指标        过程性指标：达到结果前经过的路径用以衡量的指标，可干预的        结果性指标：业务漏洞的底部，不可更改的后验的治标        根据使用流程进行拆解，如列表页到详情页的转化率    step4:如何衡量指标的是否达到目标        设置合理的benchmark,根据历史数据进行测算    step5:如何改善指标        通过改善过程性指标去实现OSM的实践：OSM作为数据指标体系的指导思想，理解业务，制定目标是OSM的核心，AARRR和UJM是制定策略的方法论，最终根据方法论细化指标。    用户行为分析模型：        AARRR / UJM：两者都是路径模型但是出发的角度不同，前者是基于产品，探索整个产品周期，即获取，激活，留存....                     后者是从用户出发，探究用户的行为路径，即用户进入产品，登录，加购，下单，支付，复购        生命周期AARRR：链接：https://aaaragorn.github.io/sunyang.GitHub.io/2021/05/28/AARRR%E6%A8%A1%E5%9E%8B/        用户路径UJM：链接:    MECE指标模型：对于目标KPi进行分成拆解，这个过程可以称之为指标体系分层治理，指导思想是完全独立，相互穷尽。        对于指标进行分层的拆解</code></pre><table><thead><tr><th></th><th>增长指标</th><th>活跃度指标</th><th>变现指标</th></tr></thead><tbody><tr><td>tier1</td><td>新注册用户数<br />新企业数量</td><td>登录用户量</td><td>营业额<br />客单价</td></tr><tr><td>tier2</td><td>分渠道访问量/访问用户量<br />分渠道新访问量/访问用户量<br />活动拉新<br />注册转化率<br />注册流程转化率</td><td>—</td><td>—</td></tr><tr><td>tier3</td><td>访问时长<br />每次会话浏览页<br />跳出率<br />渠道留存率</td><td>—</td><td>—</td></tr></tbody></table><pre><code>        如核心指标GMV =            第一层： 成交用户数 * 平均客单价            第二层： 点击UV * 访购率 * 平均客单价            第二层： 曝光UV * 转化率 * 访购率 * 平均客单价    业务分析：        指标体系案例        以mock产品为例子为例：-----    数据采集—我需要怎么获取这些指标        数据埋点设计：链接——————————————————————        预值属性整理：https://tongji.baidu.com/analytics-manual/data_management/preset.html    在没有任何埋点的情况下，合适的方式是根据产品的链路进行埋点的梳理。    以倒序链路形式记录用户的每一条路径、页面，与点击。同级页面操作或多来源页面一漏斗形式呈现。    在梳理链路时一定做到尽善尽美，每个页面的浏览和每一次点击都要记录在案。至于埋不埋是下一步考虑的事情。    1）功能数据    指的是基于版本动作而产生的数据需求。列举版本所做的新功能和修改，从动作出发去思考带来的直接数据效果，或者用什么数据去验证动作效果。    例如新版本上了一个在线用户列表，其他用户可查看用户列表后前往个人主页发起聊天。在列表中增加了新人权重，以提高新人收信率。    此时整理出的数据需求包含：    通过该列表进行发送私信的转化率    新用户首日被浏览率    新用户首日收招呼率    从数据需求出发梳理短链路和埋点，在埋点文档中查漏补缺。可能是补充事件，也可能补充埋点就足够了。    （2）核心数据    每个版本我们都会做不同的动作，或大或小。动作有对应的数据去验证其有效性。但是产品在一个阶段内，会有一些核心数据需要去持续观测，要和功能数据去进行一个权衡对比。如果功能数据上升了，但是核心数据下降了，也是不可取的片面验证。    核心数据便是产品在一个阶段内需要去持续观测的最重要的一些数据。例如对于社交产品来说，我们一般持续观测其留存率、连接率和客单价等关键数据。</code></pre>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 索引 </tag>
+            
+        </tags>
       
     </entry>
     

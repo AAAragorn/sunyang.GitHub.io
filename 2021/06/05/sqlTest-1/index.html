@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="appearance-auto" lang="en"><head><meta charset="UTF-8"><title>sqlTest_1</title><meta name="description" content="P1 P1!"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
+<!DOCTYPE html><html class="appearance-auto" lang="en"><head><meta charset="UTF-8"><title>sql_练习</title><meta name="description" content="P1 P1!"><meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1"><!-- Google Analytics --><!-- End Google Analytics -->
 <!-- Baidu Analytics --><!-- End Baidu Analytics --><link rel="icon" href="https://pic1.zhimg.com/v2-79688bee0f16b267fe39c62dfb520f1c_r.jpg?source=1940ef5c"><link rel="stylesheet" href="/sunyang.GitHub.io/style/common/bulma.css"><link rel="stylesheet" href="/sunyang.GitHub.io/style/base.css"><link rel="stylesheet" href="/sunyang.GitHub.io/style/common/helper.css"><script src="/sunyang.GitHub.io/js/common.js"></script><link rel="stylesheet" href="/sunyang.GitHub.io/style/post.css"><link rel="stylesheet" href="/sunyang.GitHub.io/style/themes/highlight-theme-light.css"><script src="/sunyang.GitHub.io/js/highlight.pack.js"></script><meta name="description" content="所使用的表 
 Course:
 
@@ -82,9 +82,9 @@ Tname
 
 
 查询” 01 “课程比” 02 “课程成绩高的学生的信息及课程分数
-
-SELECT * FROM StudentWHERE SId IN    (SELECT v1.SId FROM (SELECT.."><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/sunyang.GitHub.io/atom.xml" title="Hexo" type="application/atom+xml">
-</head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/sunyang.GitHub.io/">sunyang's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">sqlTest_1</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Click back to the top</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/">Home</a></h3><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/about">About</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/">Home</a></h3><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/about">About</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile is-hidden"></div><div class="column is-9"><header class="my-4"></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">sqlTest_1</h1><time class="has-text-grey" datetime="2021-06-05T07:02:53.000Z">2021-06-05</time><article class="mt-2 post-content"><p>所使用的表 </p>
+ SELECT * FROM Student WHERE SId IN 
+ (SELECT v1.SId FROM (SELECT.."><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/sunyang.GitHub.io/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body class="is-flex is-flex-direction-column"><header class="header-widget is-flex-shrink-0 is-hidden-mobile"><div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height"><section class="is-hidden-mobile is-flex-shrink-0"><h2><a href="/sunyang.GitHub.io/">sunyang's blog</a></h2></section><h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0"><div class="is-full-height" id="postTopic"><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">sql_练习</p><p class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">Click back to the top</p></div></h3><aside class="is-flex-shrink-0"><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/">Home</a></h3><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/about">About</a></h3></aside></div></header><header class="is-flex header-widget is-flex-shrink-0 is-align-items-center is-justify-content-center is-hidden-tablet"><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/">Home</a></h3><h3 class="is-inline-block"><a href="/sunyang.GitHub.io/about">About</a></h3></header><main><main class="container is-max-widescreen content section post-page pt-4 px-4"><div class="columns is-flex-desktop is-justify-content-center is-flex-direction-row-reverse"><div class="column is-3 is-hidden-mobile is-hidden"></div><div class="column is-9"><header class="my-4"><a href="/sunyang.GitHub.io/tags/%E7%BB%83%E4%B9%A0%E8%AE%B0%E5%BD%95"><i class="tag post-item-tag">练习记录</i></a></header><h1 class="mt-0 mb-1 is-family-serif" id="postTitle">sql_练习</h1><time class="has-text-grey" datetime="2021-06-05T07:02:53.000Z">2021-06-05</time><article class="mt-2 post-content"><p>所使用的表 </p>
 <p>Course:</p>
 <table>
 <thead>
@@ -166,26 +166,136 @@ SELECT * FROM StudentWHERE SId IN    (SELECT v1.SId FROM (SELECT.."><meta name="
 </tr>
 </tbody></table>
 <ol>
-<li>查询” 01 “课程比” 02 “课程成绩高的学生的信息及课程分数</li>
+<li><p>查询” 01 “课程比” 02 “课程成绩高的学生的信息及课程分数</p>
+<p> SELECT * FROM Student<br> WHERE SId IN </p>
+<pre><code> (SELECT v1.SId FROM (SELECT * FROM SC WHERE SC.CId = &#39;01&#39;) As v1
+</code></pre>
+<p> INNER JOIN (SELECT * FROM SC WHERE SC.CId = ‘02’) AS v2 ON v1.SId = v2.SId<br> WHERE v1.score &gt; v2.score)</p>
+</li>
+<li><p>查询同时上过” 01 “课程和” 02 “课程的的学生的成绩情况</p>
+<p> SELECT v1.SId,v1.score As 01_score,v2.score As 02_score<br> FROM (Select * FROM SC WHERE SC.CId = ‘01’) AS v1<br> INNER JOIN (SELECT * FROM SC WHERE SC.CId = ‘02’) AS v2<br> ON v1.SId = v2.SId</p>
+</li>
+<li><p>查询平均成绩大于60分的学生的学号和平均成绩</p>
+<p> SELECT s.Sid,AVG(s.score)<br> FROM SC AS s<br> GROUP BY s.Sid<br> HAVING AVG(s.score) &gt; 60</p>
+</li>
 </ol>
-<p>SELECT * FROM Student<br>WHERE SId IN<br>    (SELECT v1.SId FROM (SELECT * FROM SC WHERE SC.CId = ‘01’) As v1<br>INNER JOIN (SELECT * FROM SC WHERE SC.CId = ‘02’) AS v2 ON v1.SId = v2.SId<br>WHERE v1.score &gt; v2.score)</p>
-<ol start="2">
-<li>查询同时上过” 01 “课程和” 02 “课程的的学生的成绩情况</li>
-</ol>
-<p>SELECT v1.SId,v1.score As 01_score,v2.score As 02_score<br>FROM (Select * FROM SC WHERE SC.CId = ‘01’) AS v1<br>INNER JOIN (SELECT * FROM SC WHERE SC.CId = ‘02’) AS v2<br>ON v1.SId = v2.SId</p>
-<ol start="3">
-<li>查询平均成绩大于60分的学生的学号和平均成绩</li>
-</ol>
-<p>SELECT s.Sid,AVG(s.score)<br>FROM SC AS s<br>GROUP BY s.Sid<br>HAVING AVG(s.score) &gt; 60</p>
 <p>4.查询平均成绩小于60分的学生的学号和平均成绩 不包含无效成绩</p>
-<p>AVG() GROUP BY HAVING</p>
-<p>SELECT s.Sid,AVG(IFNULL(s.score,0))<br>FROM SC AS s<br>GROUP BY s.Sid<br>HAVING AVG(s.score) is NULL or AVG(s.score) &lt; 60</p>
+<pre><code>AVG() GROUP BY HAVING
+
+SELECT s.Sid,AVG(IFNULL(s.score,0))
+FROM SC AS s
+GROUP BY s.Sid
+HAVING AVG(s.score) is NULL or AVG(s.score) &lt; 60
+</code></pre>
 <p>5.查询张姓老师的数量</p>
-<p>SELECT</p>
+<pre><code>简单了
+</code></pre>
 <p>6.每门课程的学生人数</p>
-<p>SELECT c.CId AS “课程id”,count(*) AS “课程人数”<br>FROM Course AS c LEFT JOIN SC<br>on c.CId = SC.CId<br>GROUP BY c.CId</p>
+<pre><code>SELECT c.CId AS &quot;课程id&quot;,count(*) AS &quot;课程人数&quot;
+FROM Course AS c LEFT JOIN SC
+on c.CId = SC.CId
+GROUP BY c.CId
+</code></pre>
 <p>7.查询课程编号为 01 且课程成绩在 80 分及以上的学生的学号和姓名</p>
-<p>SELECT<br>FROM </p>
-<p>3.统计每门课程的学生选修人数（超过 5 人的课程才统计</p>
-<p>检索至少选修两门课程的学生学号</p>
+<pre><code>简单了
+</code></pre>
+<p>8.选修了全部课程的学生信息</p>
+<pre><code>SELECT *
+FROM Student
+WHERE Student.SId IN
+(SELECT Student.SId
+FROM Student LEFT JOIN SC
+ON Student.SId = SC.SId
+GROUP BY Student.SId
+HAVING COUNT(*)  = (SELECT COUNT(*) FROM Course))
+</code></pre>
+<p>9.查询存在不及格的课程</p>
+<pre><code>SELECT *
+FROM Course
+WHERE Course.CId IN (
+    SELECT DISTINCT CId
+    FROM SC
+    WHERE SC.score &lt; 60
+)
+</code></pre>
+<p>10.查询任何一门课程成绩在 70 分以上的学生姓名、课程名称和分数</p>
+<pre><code>SELECT Student.Sname,Course.Cname,SC.score
+FROM Student,SC,Course
+WHERE Student.SID = SC.SId AND SC.CId = Course.CId AND SC.score &gt; 70
+</code></pre>
+<p>11.查询课程名称为「数学」，且分数低于 60 的学生姓名和分数</p>
+<pre><code>SELECT Student.Sname,SC.score
+FROM Student,SC,Course
+WHERE Student.SId = SC.SId AND Course.CId = SC.CId AND Course.Cname = &quot;数学&quot; AND SC.score &lt; 60
+</code></pre>
+<p>12.查询平均成绩大于等于 85 的所有学生的学号、姓名和平均成绩</p>
+<pre><code>SELECT a.SId,a.Sname,AVG(b.score)
+FROM Student a,SC b
+WHERE a.SId = b.SId
+GROUP BY a.SId
+HAVING AVG(b.score) &gt; 85
+</code></pre>
+<p>13.查询男生、女生人数</p>
+<pre><code>SELECT Student.Ssex,COUNT(Student.Ssex)
+FROM Student
+GROUP BY Student.Ssex
+</code></pre>
+<p>14.检索” 01 “课程分数小于 60，按分数降序排列的学生信息</p>
+<pre><code>SELECT Student.*
+FROM Student,SC
+WHERE Student.SId = SC.SId AND SC.score &lt; 60 AND SC.CId = &#39;01&#39;
+ORDER BY SC.score DESC
+</code></pre>
+<p>15.按平均成绩从高到低显示所有学生的所有课程的成绩以及平均成绩</p>
+<pre><code>SELECT SC.SId,SUM(CASE WHEN SC.CId = &#39;01&#39; THEN SC.score END) AS &quot;01&quot;,
+FROM SC
+GROUP BY SC.SId
+</code></pre>
+<p>16.以如下形式显示：课程 ID，课程 name，最高分，最低分，平均分，及格率，中等率，优良率，优秀率，及格为&gt;=60，中等为：70-80，优良为：80-90，优秀为：&gt;=90，要求输出课程号和选修人数，查询结果按人数降序排列，若人数相同，按课程号升序排列</p>
+<pre><code>SELECT SC.CId,
+            MAX(SC.score) AS &quot;最高分&quot;,
+            MIN(SC.score) AS &quot;最高分&quot;,
+            AVG(SC.score) AS &quot;平均分&quot;,
+            CONCAT(CAST(COUNT(Case WHEN SC.score &gt;=60 THEN SC.score END)/COUNT(SC.score)*100 AS DECIMAL),&quot;%&quot;) AS &quot;及格率&quot;
+FROM SC LEFT JOIN Course
+ON SC.CId = Course.CId
+GROUP BY SC.CId
+</code></pre>
+<p>17.查询没学过”张三”老师讲授的任一门课程的学生姓名</p>
+<pre><code>SELECT SC.SId
+FROM SC,Student
+WHERE SC.SId = Student.SId
+GROUP BY SC.SId
+HAVING SC.SId NOT IN (
+        SELECT SC.SId
+        FROM SC
+        WHERE SC.CId IN (
+            SELECT Course.CId
+            FROM Course 
+            WHERE Course.TId  = (SELECT Teacher.TId FROM Teacher WHERE Teacher.Tname = &quot;张三&quot;)
+        )
+)
+</code></pre>
+<p>18.成绩不重复，查询选修「张三」老师所授课程的学生中，成绩最高的学生信息及其成绩</p>
+<pre><code>SELECT Student.Sname,SC.score
+FROM SC,Student,Course,Teacher
+WHERE SC.SId = Student.SId 
+    AND SC.CId = Course.TId
+    AND Course.TId = Teacher.TId
+    AND Teacher.Tname = &quot;张三&quot;
+ORDER BY SC.score DESC
+LIMIT 1
+思考 LIMIT 和ORDER BY 错误的思路 用了MAX
+</code></pre>
+<p>19.成绩有重复的情况下，查询选修「张三」老师所授课程的学生中，成绩最高的学生信息及其成绩</p>
+<p>在成绩有重复的情况下存在相同，需要子查询找出最高的成绩。找学生</p>
+<p>20.查询不同课程成绩相同的学生的学生编号、课程编号、学生成绩</p>
+<pre><code>SELECT any_value(A.CId),any_value(A.SId),any_value(A.score)
+FROM SC AS A 
+INNER JOIN SC AS B
+ON A.score = B.score
+AND A.CId != B.CId
+AND A.SId = B.SId
+GROUP BY A.CId,A.SId
+</code></pre>
 </article><section class="jump-container is-flex is-justify-content-space-between my-6"><!-- em is empty placeholder--><a class="button is-default" href="/sunyang.GitHub.io/2021/06/05/%E5%BD%B7%E5%BE%A8%E5%B0%91%E5%B9%B4%E6%97%B6/" title="黑塞"><i class="iconfont icon-prev mr-2 has-text-grey"></i><span class="has-text-weight-semibold">Previous: 黑塞</span></a><a class="button is-default" href="/sunyang.GitHub.io/2021/06/02/mock%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87%E4%BD%93%E7%B3%BB%E6%90%AD%E5%BB%BA/" title="mock数据指标体系搭建"><span class="has-text-weight-semibold">Next: mock数据指标体系搭建</span><i class="iconfont icon-next ml-2 has-text-grey"></i></a></section><article class="mt-6 comment-container"><script async repo="Haojen/Claudia-theme-blog" src="https://utteranc.es/client.js" issue-term="pathname" theme="preferred-color-scheme"></script></article></div></div></main></main><footer class="is-flex is-flex-direction-column is-align-items-center is-flex-shrink-0 is-family-serif"><section class="sns-container"><a title="twitter" target="_blank" rel="noopener nofollow" href="//twitter.com//"><i class="iconfont icon-twitter"></i></a><!-- Github--><a title="github" target="_blank" rel="noopener nofollow" href="//github.com/haojen"><i class="iconfont icon-github"></i></a><!-- Ins--><a title="instagram" target="_blank" rel="noopener nofollow" href="//www.instagram.com//"><i class="iconfont icon-ins"></i></a><!-- RSS--><!-- 知乎--><!-- 领英--><!-- 脸书--><a title="facebook" target="_blank" rel="noopener nofollow" href="//www.facebook.com//"><i class="iconfont icon-tian7_facebook"></i></a></section><p><span>Copyright ©</span><span> sunyang 2021</span></p><div class="is-flex is-justify-content-center is-flex-wrap-wrap"><p>Powered by Hexo &verbar;&nbsp;</p><p class="is-flex is-justify-content-center"><a title="Hexo theme author" href="//github.com/haojen">Theme by Haojen&nbsp;</a></p><div style="margin-top: 2px"><a class="github-button" title="github-button" href="https://github.com/haojen/hexo-theme-Claudia" data-color-scheme="no-preference: light; light: light; dark: dark;" data-show-count="true"></a></div></div><div><span></span></div></footer><script async defer src="https://buttons.github.io/buttons.js"></script><script src="/sunyang.GitHub.io/js/post.js"></script></body></html>
